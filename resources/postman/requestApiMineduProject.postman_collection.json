@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "94b784c1-d507-4e2f-ac61-9243cc2f45e5",
+		"name": "requestApiMineduProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "teachers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/teachers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"teachers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "actors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/actors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "content-length",
+							"value": "431",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Sun, 11 Oct 2020 23:10:08 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9",
+							"name": "server",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"actors\": [\n    {\n      \"age\": 20, \n      \"gender\": \"M\", \n      \"id\": 1, \n      \"name\": \"rash\"\n    }, \n    {\n      \"age\": 22, \n      \"gender\": \"M\", \n      \"id\": 2, \n      \"name\": \"howard\"\n    }, \n    {\n      \"age\": 25, \n      \"gender\": \"M\", \n      \"id\": 3, \n      \"name\": \"sheldom\"\n    }, \n    {\n      \"age\": 30, \n      \"gender\": \"F\", \n      \"id\": 4, \n      \"name\": \"Amy\"\n    }\n  ], \n  \"success\": true, \n  \"totoal_actors\": 4\n}\n"
+				}
+			]
+		},
+		{
+			"name": "students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/students",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "content-length",
+							"value": "170",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Sun, 11 Oct 2020 23:09:50 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "server",
+							"value": "Werkzeug/1.0.1 Python/3.7.9",
+							"name": "server",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"movies\": [\n    {\n      \"id\": 1, \n      \"release_date\": \"Sun, 11 Oct 2020 01:04:51 GMT\", \n      \"title\": \"TBBT\"\n    }\n  ], \n  \"success\": true, \n  \"total_movies\": 1\n}\n"
+				}
+			]
+		},
+		{
+			"name": "teachers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"jafar\"\n}\n\n\n\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/teachers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Yabar\",\n\t\"age\": \"15\",\n    \"gender\": \"M\",\n    \"teacher_id\": \"5fb6eb21cf9d56253f1d7756\",\n    \"year\": \"2020\"\n}\n\n\n\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/students",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teachers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Rubio\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/teachers/5fb6eb21cf9d56253f1d7756",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"teachers",
+						"5fb6eb21cf9d56253f1d7756"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"tbbt2\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/students/5fb6ec25cf9d56253f1d7758",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"students",
+						"5fb6ec25cf9d56253f1d7758"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teachers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/teachers/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFBMzl5OWhpclh0QmdWSXlRendRNSJ9.eyJpc3MiOiJodHRwczovL21henBlLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjU5YjU2MjE1YWIzYTAwNzcyZDA2OGEiLCJhdWQiOiJtaW5lZHUiLCJpYXQiOjE2MDU4MjMxNjYsImV4cCI6MTYwNTgzMDM2NiwiYXpwIjoiWjZCNktMckJTaWlwY0JjN0tkRjRZWkE1VkF5NFUza2EiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpzdHVkZW50cyIsImdldDp0ZWFjaGVycyIsInBhdGNoOnN0dWRlbnRzIiwicGF0Y2g6dGVhY2hlcnMiLCJwb3N0OnN0dWRlbnRzIiwicG9zdDp0ZWFjaGVycyJdfQ.NsNeBrBczBGsGMREGEKXL0UgJ10z90uF8Is9S_OJU77QSrN5bLCgMMI4uuTY8Gp104igdmhWPRcOnlZfR-NEY9EWklFoLQR55mPSspnhGx42v9EAuWX7SOd7roKZSTaj5vZHaPRg8PZKv9CTcskl01UBGz0KMyFN3VWoleaSDIckaMtC-VRwt_Hl1E1x45slpmWKG0isypa8jBfCUw9m2-92wVqauPSGShEIIX9Ca2RwiQ12SWEPmueV1DfhHRJ25eZ7vYwP7nebOoiL9cmHHYM6ScB9FR2IaB9MQf1TlS54QW1SFeyBkKjCDvYARy5LmPE785XbhSO0Uoq0eqm5eg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/students/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
