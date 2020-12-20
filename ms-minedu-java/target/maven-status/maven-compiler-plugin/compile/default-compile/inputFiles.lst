@@ -1,0 +1,8 @@
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/domain/service/TeacherObjectService.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/domain/service/impl/TeacherObjectServiceImpl.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/MsMineduJavaApplication.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/repository/TeacherObjectRepository.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/controller/TeacherController.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/model/TeacherObject.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/config/DynamoDBConfig.java
+/home/marvin/Documents/MINEDU/ENTREGABLE_2/minedu-ms/ms-minedu-java/src/main/java/com/minedu/usi/msusi/controller/UsiController.java
