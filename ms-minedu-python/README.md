@@ -1,4 +1,43 @@
 
+<h1>Teacher/Students Microservices</h1>
+
+### Installing dependencies
+
+### python 3.7
+
+Follow instructions to install the latest version of python for your platform in the [python docs](https://docs.python.org/3/using/unix.html)
+
+In python, we recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organized. Instructions for setting up virtual environment for your platform can be found in the [python docs](https://docs.python.org/3/using/unix.html)
+
+#### PIP Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+This will install all of the required packages we selected within the `requirements.txt` file.
+
+
+##### Key dependencies
+
+- [Flask](http://flask.pocoo.org/) Lightweight backend microservices framework. Flask is required to handle request and responses.
+- [flask_mongoalchemy](https://pythonhosted.org/Flask-MongoAlchemy/) Adds support for MongoDB on Flask using MongoAlchemy.
+
+- [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) Extension to handle cross origin requests from our client.
+
+- [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/) Extension that handles SQLAlchemy database migrations for Flask applications using Alembic.
+
+- [Python Jose](https://pypi.org/project/python-jose/) Javascript Object Signing and Encryption (JOSE)
+
+- [Auth0](https://auth0.com/) Third-party authentication system which provides rapidly integrate authentication and authorization for web, mobile, and legacy applications so you can focus on your core business.
+
+<h1>Specifications</h1>
+
+1. [`Postman for teacher/student CRUD`](../resources/postman/requestApiMineduProject.postman_collection.json)
+
+The minedu (Teachers/Students) is a POc that provides the CRUD for teacher and student resources in a microservice.
+
+
 
 <h1>Dockerfiles</h1>
 
@@ -21,7 +60,7 @@ ENTRYPOINT ["python", "app.py"]
 
 
 
-<b>Third Party Authorization Service: Auth0:</b>
+<h1>Third Party Authorization Service: Auth0:</h1>
 
 Account: arquitecto_usi03@minedu.gob.pe
 
