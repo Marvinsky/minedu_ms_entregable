@@ -33,34 +33,23 @@ This will install all of the required packages we selected within the `requireme
 
 <h1>Specifications</h1>
 
-1. [`Postman for teacher/student CRUD`](../resources/postman/requestApiMineduProject.postman_collection.json)
-
 The minedu (Teachers/Students) is a POc that provides the CRUD for teacher and student resources in a microservice.
 
 
+1. [`Postman for teacher/student CRUD`](../resources/postman/requestApiMineduProject.postman_collection.json)
 
-<h1>Dockerfiles</h1>
 
-```
-FROM python:3.7.2-slim
 
-COPY . /app
-WORKDIR /app
+<h1>Dockerfile for python project</h1>
 
-RUN pip install --upgrade pip
-RUN pip install flask
+1. [`Dockerfile`](devops/docker_files/dockerfile)
 
-ENTRYPOINT ["python", "app.py"]
-```
 
 <h1>Process of running a container starting from Dockerfile</h1>
 
 ![Create app](../resources/images/image13.png "Create app")
 
-
-
-
-<h1>Third Party Authorization Service: Auth0:</h1>
+<h1>Third Party Authorization Service:</h1> <i>AUTH0</i>
 
 Account: arquitecto_usi03@minedu.gob.pe
 

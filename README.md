@@ -8,7 +8,6 @@ Each microservice detail execution /dependencies are in the READMEs in:
 
 1. [`./ms-minedu-java/`](./ms-minedu-java/README.md)
 2. [`./ms-minedu-python/`](./ms-minedu-python/README.md)
-3. [`./ms-minedu-nodejs/`](./ms-minedu-nodejs/README.md)
 
 
 <H2>Continuous Delivery</H2>
